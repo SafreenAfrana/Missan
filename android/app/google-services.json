@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "382688386493",
+    "project_id": "missan-cead9",
+    "storage_bucket": "missan-cead9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382688386493:android:80b4c50c9a4d241fda86d4",
+        "android_client_info": {
+          "package_name": "com.example.missan_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382688386493-9293jun69n139qiuds3fk57bmhpt396d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.missan_app",
+            "certificate_hash": "ccc91e599fc9e4f52ad3c6e7248714b81ca1fa14"
+          }
+        },
+        {
+          "client_id": "382688386493-m6olebsfqdipehbn04280ee5j4gr8450.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5P19i4Z5GPvrBOiUxiPS8MoDYH3Wcao4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382688386493-m6olebsfqdipehbn04280ee5j4gr8450.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
