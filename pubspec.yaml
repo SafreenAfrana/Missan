@@ -37,24 +37,18 @@ dependencies:
   cupertino_icons: ^1.0.2
   cloud_firestore: ^4.2.0
   firebase_core: ^2.4.0
-  get: ^4.3.8
   firebase_core_platform_interface: ^4.5.1
-  shared_preferences: ^2.0.15
   flutter_form_builder: ^7.7.0
   form_builder_validators: ^8.4.0
   flutter_slidable: ^2.0.0
   modal_bottom_sheet: ^3.0.0-pre
   flutter_spinkit: ^5.1.0
-  badges: ^3.1.1
   flutter_staggered_animations: ^1.1.1
   cached_network_image: ^3.2.3
   image_cropper: ^3.0.1
   file_picker: ^5.2.5
   permission_handler: ^10.2.0
   firebase_storage: ^11.2.0
-
-
-
 
 dev_dependencies:
   flutter_test:
