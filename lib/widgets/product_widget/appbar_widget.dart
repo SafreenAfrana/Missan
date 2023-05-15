@@ -1,18 +1,11 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart' hide ModalBottomSheetRoute;
 import 'package:flutter_form_builder/flutter_form_builder.dart';
-import 'package:missan_app/models/api.dart';
-import 'package:missan_app/models/product_model.dart';
 import 'package:missan_app/screens/add_product_screen.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 
 PreferredSizeWidget appBarWidget(
   BuildContext context,
-  TextEditingController searchController,
-  TabController tabController,
-  List<Product> cartList,
-  Api api,
-  List<Category> categories,
 ) {
   return AppBar(
       elevation: 0,
@@ -23,7 +16,6 @@ PreferredSizeWidget appBarWidget(
         height: 40,
         width: MediaQuery.of(context).size.width * 20,
         child: FormBuilderTextField(
-          controller: searchController,
           onChanged: (value) {},
           decoration: InputDecoration(
             border: OutlineInputBorder(
@@ -34,10 +26,7 @@ PreferredSizeWidget appBarWidget(
             hintText: 'Search...',
             prefixIcon: Icon(Icons.search),
             suffixIcon: IconButton(
-              onPressed: () {
-                // homepagedecl.searchText.value = '';
-                searchController.text = '';
-              },
+              onPressed: () {},
               icon: Icon(
                 Icons.clear,
               ),

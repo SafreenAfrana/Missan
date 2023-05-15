@@ -1,9 +1,7 @@
 // ignore_for_file: prefer_const_constructors, use_build_context_synchronously
 
 import 'dart:async';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:missan_app/models/product_model.dart';
 import 'package:missan_app/screens/product_screen.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
@@ -20,15 +18,12 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     setState(() {
       Timer(const Duration(seconds: 3), () async {
-        if (Product.allProducts.isEmpty) {
-          getProduct();
-          Navigator.pushAndRemoveUntil(
-              context,
-              MaterialPageRoute(
-                builder: (context) => ProductScreen(),
-              ),
-              (route) => false);
-        }
+        Navigator.pushAndRemoveUntil(
+            context,
+            MaterialPageRoute(
+              builder: (context) => ProductScreen(),
+            ),
+            (route) => false);
       });
     });
   }
@@ -46,29 +41,6 @@ class _SplashScreenState extends State<SplashScreen> {
         ),
       ),
     );
-  }
-
-  getProduct() async {
-    Product.allProducts.clear();
-
-    FirebaseFirestore.instance
-        .collection("Products")
-        // .where('category', isEqualTo: category)
-        .get()
-        .then((querySnapshot) {
-      // ignore: avoid_function_literals_in_foreach_calls
-      querySnapshot.docs.forEach((result) {
-        Product.allProducts.add(Product(
-            name: result.get('name'),
-            price: result.get('price'),
-            rank: result.get('rank'),
-            description: result.get('description'),
-            productId: result.get('productId'),
-            category: result.get('category'),
-            imageName: result.get('imageName'),
-            quantity: ValueNotifier<int>(0)));
-      });
-    });
   }
 
   showFadingCircleLoading(context) {

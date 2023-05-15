@@ -7,7 +7,7 @@ import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:missan_app/miscellaneous/theme.dart';
-import 'package:missan_app/models/api.dart';
+import 'package:missan_app/models/category_model.dart';
 import 'package:missan_app/models/product_model.dart';
 
 // ignore: must_be_immutable

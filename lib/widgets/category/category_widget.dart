@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:missan_app/miscellaneous/common.dart';
-import 'package:missan_app/models/api.dart';
+import 'package:missan_app/models/category_model.dart';
 import 'package:missan_app/widgets/category/category_list_widget.dart';
 
 // ignore: must_be_immutable
